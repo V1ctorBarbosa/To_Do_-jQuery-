@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --font-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.container {
+    height: 450px;
+    width: 430px;
+    background: rgba(255, 255, 255, 0.514);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+#input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #51996ba9;
+    color: var(--font-color);
+    font-size: 16px;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+#input::placeholder {
+    color: var(--font-color);
+    font-size: 16px;
+    text-align: center;
+}
+
+ul li{
+    background-color: #51996ba9;
+    color: var(--font-color);
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+    list-style: none;
+}
+
+ul .fa-check, .fa-trash {
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-check {
+    color: #cbe7d5;
+    right: 40px;
+}
+
+ul .fa-trash {
+    right: 15px;
+}
+
+ul .checked {
+    background-color: #17c557e3;
+    text-decoration: line-through;
+    transition: .2;
+}
